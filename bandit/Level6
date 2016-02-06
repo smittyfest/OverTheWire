@@ -1,0 +1,338 @@
+bandit5@melinda:~$ ls
+inhere
+bandit5@melinda:~$ ls -alh
+total 24K
+drwxr-xr-x   3 root root    4.0K Nov 14  2014 .
+drwxr-xr-x 167 root root    4.0K Jul  9  2015 ..
+-rw-r--r--   1 root root     220 Apr  9  2014 .bash_logout
+-rw-r--r--   1 root root    3.6K Apr  9  2014 .bashrc
+-rw-r--r--   1 root root     675 Apr  9  2014 .profile
+drwxr-x---  22 root bandit5 4.0K Nov 14  2014 inhere
+bandit5@melinda:~$ cd inhere/
+bandit5@melinda:~/inhere$ ls -alh
+total 88K
+drwxr-x--- 22 root bandit5 4.0K Nov 14  2014 .
+drwxr-xr-x  3 root root    4.0K Nov 14  2014 ..
+drwxr-x---  2 root bandit5 4.0K Nov 14  2014 maybehere00
+drwxr-x---  2 root bandit5 4.0K Nov 14  2014 maybehere01
+drwxr-x---  2 root bandit5 4.0K Nov 14  2014 maybehere02
+drwxr-x---  2 root bandit5 4.0K Nov 14  2014 maybehere03
+drwxr-x---  2 root bandit5 4.0K Nov 14  2014 maybehere04
+drwxr-x---  2 root bandit5 4.0K Nov 14  2014 maybehere05
+drwxr-x---  2 root bandit5 4.0K Nov 14  2014 maybehere06
+drwxr-x---  2 root bandit5 4.0K Nov 14  2014 maybehere07
+drwxr-x---  2 root bandit5 4.0K Nov 14  2014 maybehere08
+drwxr-x---  2 root bandit5 4.0K Nov 14  2014 maybehere09
+drwxr-x---  2 root bandit5 4.0K Nov 14  2014 maybehere10
+drwxr-x---  2 root bandit5 4.0K Nov 14  2014 maybehere11
+drwxr-x---  2 root bandit5 4.0K Nov 14  2014 maybehere12
+drwxr-x---  2 root bandit5 4.0K Nov 14  2014 maybehere13
+drwxr-x---  2 root bandit5 4.0K Nov 14  2014 maybehere14
+drwxr-x---  2 root bandit5 4.0K Nov 14  2014 maybehere15
+drwxr-x---  2 root bandit5 4.0K Nov 14  2014 maybehere16
+drwxr-x---  2 root bandit5 4.0K Nov 14  2014 maybehere17
+drwxr-x---  2 root bandit5 4.0K Nov 14  2014 maybehere18
+drwxr-x---  2 root bandit5 4.0K Nov 14  2014 maybehere19
+bandit5@melinda:~/inhere$ man du
+bandit5@melinda:~/inhere$ cd ..  
+bandit5@melinda:~$ ls
+inhere
+bandit5@melinda:~$ du -ab inhere/ | grep -v "/$" | sort -rh
+57233 inhere/maybehere16
+57123 inhere/maybehere09
+55021 inhere/maybehere03
+54678 inhere/maybehere19
+53375 inhere/maybehere01
+50730 inhere/maybehere02
+49973 inhere/maybehere00
+44838 inhere/maybehere18
+44438 inhere/maybehere12
+43901 inhere/maybehere17
+43400 inhere/maybehere06
+42429 inhere/maybehere11
+40561 inhere/maybehere05
+40360 inhere/maybehere13
+35993 inhere/maybehere04
+35827 inhere/maybehere08
+35179 inhere/maybehere15
+33920 inhere/maybehere07
+32865 inhere/maybehere14
+32522 inhere/maybehere10
+9773  inhere/maybehere16/spaces file1
+9769  inhere/maybehere03/.file1
+9697  inhere/maybehere18/-file1
+9678  inhere/maybehere12/-file1
+9641  inhere/maybehere01/-file3
+9499  inhere/maybehere15/-file2
+9388  inhere/maybehere00/-file2
+9234  inhere/maybehere03/spaces file3
+9138  inhere/maybehere08/spaces file3
+9076  inhere/maybehere12/-file3
+9064  inhere/maybehere07/spaces file2
+8976  inhere/maybehere06/.file2
+8952  inhere/maybehere13/.file2
+8944  inhere/maybehere01/.file1
+8880  inhere/maybehere03/.file2
+8854  inhere/maybehere11/-file3
+8845  inhere/maybehere11/spaces file3
+8834  inhere/maybehere01/spaces file3
+8794  inhere/maybehere15/-file1
+8785  inhere/maybehere19/spaces file2
+8716  inhere/maybehere09/spaces file2
+8585  inhere/maybehere05/spaces file3
+8517  inhere/maybehere09/.file2
+8488  inhere/maybehere02/spaces file2
+8472  inhere/maybehere16/.file2
+8361  inhere/maybehere17/spaces file1
+8351  inhere/maybehere14/-file2
+8341  inhere/maybehere17/.file2
+8275  inhere/maybehere03/-file3
+8269  inhere/maybehere10/spaces file1
+8261  inhere/maybehere11/.file3
+8244  inhere/maybehere12/.file2
+8169  inhere/maybehere08/.file1
+8085  inhere/maybehere16/-file3
+8065  inhere/maybehere06/spaces file3
+7965  inhere/maybehere19/-file3
+7961  inhere/maybehere09/-file3
+7953  inhere/maybehere02/.file3
+7836  inhere/maybehere00/.file2
+7569  inhere/maybehere09/spaces file3
+7509  inhere/maybehere16/spaces file3
+7378  inhere/maybehere00/-file3
+7334  inhere/maybehere18/spaces file1
+7209  inhere/maybehere19/.file1
+7186  inhere/maybehere19/spaces file1
+7092  inhere/maybehere10/.file1
+7040  inhere/maybehere18/spaces file3
+6965  inhere/maybehere13/.file3
+6850  inhere/maybehere00/spaces file2
+6763  inhere/maybehere09/.file1
+6746  inhere/maybehere02/spaces file1
+6595  inhere/maybehere03/-file2
+6381  inhere/maybehere17/spaces file3
+6351  inhere/maybehere02/.file1
+6348  inhere/maybehere18/spaces file2
+6302  inhere/maybehere19/-file1
+6299  inhere/maybehere15/-file3
+6144  inhere/maybehere04/.file2
+6118  inhere/maybehere00/spaces file1
+6028  inhere/maybehere01/-file1
+6002  inhere/maybehere04/spaces file3
+5959  inhere/maybehere05/-file2
+5917  inhere/maybehere05/.file2
+5815  inhere/maybehere12/.file1
+5731  inhere/maybehere06/-file1
+5702  inhere/maybehere18/.file1
+5594  inhere/maybehere19/-file2
+5532  inhere/maybehere04/spaces file1
+5426  inhere/maybehere16/.file1
+5301  inhere/maybehere16/-file2
+5301  inhere/maybehere09/spaces file1
+5258  inhere/maybehere13/.file1
+5094  inhere/maybehere17/.file3
+4932  inhere/maybehere02/-file3
+4821  inhere/maybehere14/.file3
+4802  inhere/maybehere00/.file3
+4740  inhere/maybehere19/.file2
+4585  inhere/maybehere05/.file3
+4559  inhere/maybehere11/-file2
+4543  inhere/maybehere01/spaces file2
+4422  inhere/maybehere17/-file3
+4410  inhere/maybehere04/-file1
+4389  inhere/maybehere13/spaces file3
+4282  inhere/maybehere14/-file1
+4277  inhere/maybehere16/-file1
+4251  inhere/maybehere06/spaces file2
+4139  inhere/maybehere01/spaces file1
+4130  inhere/maybehere07/spaces file1
+4073  inhere/maybehere06/spaces file1
+3952  inhere/maybehere13/spaces file1
+3825  inhere/maybehere08/-file2
+3801  inhere/maybehere02/-file1
+3798  inhere/maybehere09/.file3
+3792  inhere/maybehere01/.file3
+3756  inhere/maybehere14/-file3
+3693  inhere/maybehere08/spaces file2
+3663  inhere/maybehere07/-file1
+3628  inhere/maybehere09/-file1
+3570  inhere/maybehere10/spaces file2
+3511  inhere/maybehere02/-file2
+3443  inhere/maybehere06/-file3
+3427  inhere/maybehere14/.file1
+3387  inhere/maybehere17/spaces file2
+3385  inhere/maybehere03/spaces file2
+3362  inhere/maybehere07/-file3
+3201  inhere/maybehere05/.file1
+3147  inhere/maybehere11/spaces file1
+3146  inhere/maybehere16/spaces file2
+3070  inhere/maybehere01/.file2
+3065  inhere/maybehere07/.file1
+3014  inhere/maybehere13/-file3
+2961  inhere/maybehere10/.file3
+2650  inhere/maybehere08/-file3
+2619  inhere/maybehere04/-file2
+2577  inhere/maybehere02/.file2
+2572  inhere/maybehere05/-file3
+2501  inhere/maybehere11/.file2
+2491  inhere/maybehere04/spaces file2
+2488  inhere/maybehere07/-file2
+2460  inhere/maybehere12/spaces file2
+2440  inhere/maybehere04/.file1
+2420  inhere/maybehere05/spaces file2
+2418  inhere/maybehere06/.file3
+2346  inhere/maybehere05/-file1
+2307  inhere/maybehere19/spaces file3
+2306  inhere/maybehere18/-file3
+2282  inhere/maybehere03/.file3
+2275  inhere/maybehere02/spaces file3
+2217  inhere/maybehere08/.file3
+2190  inhere/maybehere03/spaces file1
+2159  inhere/maybehere15/.file1
+2157  inhere/maybehere12/spaces file1
+2155  inhere/maybehere10/spaces file3
+2117  inhere/maybehere04/-file3
+2084  inhere/maybehere18/.file2
+1997  inhere/maybehere07/.file3
+1991  inhere/maybehere10/-file2
+1915  inhere/maybehere00/spaces file3
+1791  inhere/maybehere17/-file2
+1639  inhere/maybehere12/spaces file3
+1637  inhere/maybehere15/spaces file3
+1623  inhere/maybehere15/spaces file1
+1503  inhere/maybehere14/.file2
+1423  inhere/maybehere13/-file2
+1382  inhere/maybehere14/spaces file1
+1359  inhere/maybehere13/-file1
+1271  inhere/maybehere06/.file1
+1237  inhere/maybehere10/-file3
+1211  inhere/maybehere11/-file1
+1148  inhere/maybehere16/.file3
+1133  inhere/maybehere17/-file1
+1077  inhere/maybehere08/-file1
+1076  inhere/maybehere06/-file2
+1052  inhere/maybehere10/-file1
+1039  inhere/maybehere00/-file1
+1033  inhere/maybehere07/.file2
+1022  inhere/maybehere12/.file3
+1022  inhere/maybehere07/spaces file3
+952 inhere/maybehere13/spaces file2
+895 inhere/maybehere17/.file1
+880 inhere/maybehere05/spaces file1
+871 inhere/maybehere14/spaces file2
+774 inhere/maybehere09/-file2
+747 inhere/maybehere08/.file2
+742 inhere/maybehere15/.file3
+551 inhere/maybehere00/.file1
+503 inhere/maybehere11/spaces file2
+494 inhere/maybehere19/.file3
+452 inhere/maybehere11/.file1
+376 inhere/maybehere14/spaces file3
+315 inhere/maybehere03/-file1
+288 inhere/maybehere01/-file2
+279 inhere/maybehere15/.file2
+251 inhere/maybehere12/-file2
+215 inhere/maybehere08/spaces file1
+154 inhere/maybehere18/.file3
+142 inhere/maybehere04/.file3
+99  inhere/maybehere10/.file2
+77  inhere/maybehere18/-file2
+51  inhere/maybehere15/spaces file2
+bandit5@melinda:~$ find . -type f -size 1033c
+./inhere/maybehere07/.file2
+bandit5@melinda:~$ cat ./inhere/maybehere07/.file2
+DXjZPULLxYr17uwoI01bNLQbtFemEgo7
+bandit5@melinda:~$ exit
+logout
+Connection to bandit.labs.overthewire.org closed.
+$ ssh bandit6@bandit.labs.overthewire.org
+
+This is the OverTheWire game server. More information on http://www.overthewire.org/wargames
+
+Please note that wargame usernames are no longer level<X>, but wargamename<X>
+e.g. vortex4, semtex2, ...
+
+Note: at this moment, blacksun is not available.
+
+bandit6@bandit.labs.overthewire.org's password: DXjZPULLxYr17uwoI01bNLQbtFemEgo7
+               
+      ,----..            ,----,          .---. 
+     /   /   \         ,/   .`|         /. ./|
+    /   .     :      ,`   .'  :     .--'.  ' ;
+   .   /   ;.  \   ;    ;     /    /__./ \ : |
+  .   ;   /  ` ; .'___,/    ,' .--'.  '   \' .
+  ;   |  ; \ ; | |    :     | /___/ \ |    ' ' 
+  |   :  | ; | ' ;    |.';  ; ;   \  \;      : 
+  .   |  ' ' ' : `----'  |  |  \   ;  `      |
+  '   ;  \; /  |     '   :  ;   .   \    .\  ; 
+   \   \  ',  /      |   |  '    \   \   ' \ |
+    ;   :    /       '   :  |     :   '  |--"  
+     \   \ .'        ;   |.'       \   \ ;     
+  www. `---` ver     '---' he       '---" ire.org     
+               
+              
+Welcome to the OverTheWire games machine!
+
+If you find any problems, please report them to Steven on
+irc.overthewire.org.
+
+--[ Playing the games ]--
+
+  This machine holds several wargames. 
+  If you are playing "somegame", then:
+
+    * USERNAMES are somegame0, somegame1, ...
+    * Most LEVELS are stored in /somegame/.
+    * PASSWORDS for each level are stored in /etc/somegame_pass/.
+
+  Write-access to homedirectories is disabled. It is advised to create a
+  working directory with a hard-to-guess name in /tmp/.  You can use the
+  command "mktemp -d" in order to generate a random and hard to guess
+  directory in /tmp/.  Read-access to both /tmp/ and /proc/ is disabled
+  so that users can not snoop on eachother.
+
+  Please play nice:
+      
+    * don't leave orphan processes running
+    * don't leave exploit-files laying around
+    * don't annoy other players
+    * don't post passwords or spoilers
+    * again, DONT POST SPOILERS! 
+      This includes writeups of your solution on your blog or website!
+
+--[ Tips ]--
+
+  This machine has a 64bit processor and many security-features enabled
+  by default, although ASLR has been switched off.  The following
+  compiler flags might be interesting:
+
+    -m32                    compile for 32bit
+    -fno-stack-protector    disable ProPolice
+    -Wl,-z,norelro          disable relro 
+
+  In addition, the execstack tool can be used to flag the stack as
+  executable on ELF binaries.
+
+  Finally, network-access is limited for most levels by a local
+  firewall.
+
+--[ Tools ]--
+
+ For your convenience we have installed a few usefull tools which you can find
+ in the following locations:
+
+    * peda (https://github.com/longld/peda.git) in /usr/local/peda/
+    * gdbinit (https://github.com/gdbinit/Gdbinit) in /usr/local/gdbinit/
+    * pwntools (https://github.com/Gallopsled/pwntools) in /usr/src/pwntools/
+    * radare2 (http://www.radare.org/) should be in $PATH
+
+--[ More information ]--
+
+  For more information regarding individual wargames, visit
+  http://www.overthewire.org/wargames/
+
+  For questions or comments, contact us through IRC on
+  irc.overthewire.org.
+
+
+bandit6@melinda:~$
