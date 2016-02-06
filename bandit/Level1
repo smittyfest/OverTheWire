@@ -1,0 +1,141 @@
+bandit0@melinda:~$ ls
+readme
+bandit0@melinda:~$ ls -al
+total 24
+drwxr-xr-x   2 root    root    4096 Nov 14  2014 .
+drwxr-xr-x 167 root    root    4096 Jul  9  2015 ..
+-rw-r--r--   1 root    root     220 Apr  9  2014 .bash_logout
+-rw-r--r--   1 root    root    3637 Apr  9  2014 .bashrc
+-rw-r--r--   1 root    root     675 Apr  9  2014 .profile
+-rw-r-----   1 bandit1 bandit0   33 Nov 14  2014 readme
+bandit0@melinda:~$ cd ..
+bandit0@melinda:/home$ ls
+bandit0   bandit7     drifter5    manpage3  narnia9  natas4    vortex13
+bandit1   bandit8     drifter6    manpage4  natas0   natas5    vortex14
+bandit10  bandit9     drifter7    manpage5  natas1   natas6    vortex15
+bandit11  behemoth0   drifter8    manpage6  natas10  natas7    vortex16
+bandit12  behemoth1   drifter9    manpage7  natas11  natas8    vortex17
+bandit13  behemoth2   hintbot     maze0     natas12  natas9    vortex18
+bandit14  behemoth3   krypton1    maze1     natas13  semtex1   vortex19
+bandit15  behemoth4   krypton2    maze2     natas14  semtex2   vortex2
+bandit16  behemoth5   krypton3    maze3     natas15  semtex3   vortex20
+bandit17  behemoth6   krypton4    maze4     natas16  semtex4   vortex21
+bandit18  behemoth7   krypton5    maze5     natas17  semtex5   vortex22
+bandit19  behemoth8   krypton6    maze6     natas18  utumno0   vortex23
+bandit2   boobiesbot  krypton7    maze7     natas19  utumno1   vortex24
+bandit20  drifter0    leviathan0  maze8     natas2   utumno2   vortex25
+bandit21  drifter1    leviathan1  maze9     natas20  utumno3   vortex3
+bandit22  drifter10   leviathan2  narnia0   natas21  utumno4   vortex4
+bandit23  drifter11   leviathan3  narnia1   natas22  utumno5   vortex5
+bandit24  drifter12   leviathan4  narnia2   natas23  utumno6   vortex6
+bandit25  drifter13   leviathan5  narnia3   natas24  utumno7   vortex7
+bandit26  drifter14   leviathan6  narnia4   natas25  utumno8   vortex8
+bandit3   drifter15   leviathan7  narnia5   natas26  vortex1   vortex9
+bandit4   drifter2    manpage0    narnia6   natas27  vortex10
+bandit5   drifter3    manpage1    narnia7   natas28  vortex11
+bandit6   drifter4    manpage2    narnia8   natas3   vortex12
+bandit0@melinda:/home$ cd -
+/home/bandit0
+bandit0@melinda:~$ cat readme 
+boJ9jbbUNNfktd78OOpsqOltutMc3MY1
+bandit0@melinda:~$ man file
+bandit0@melinda:~$ file readme 
+readme: ASCII text
+bandit0@melinda:~$ ssh bandit1
+ssh: Could not resolve hostname bandit1: Name or service not known
+bandit0@melinda:~$ ssh bandit1@bandit.labs.overthewire.org
+ssh: Could not resolve hostname bandit.labs.overthewire.org: Name or service not known
+bandit0@melinda:~$ exit
+logout
+Connection to bandit.labs.overthewire.org closed.
+$ ssh bandit1@bandit.labs.overthewire.org
+
+This is the OverTheWire game server. More information on http://www.overthewire.org/wargames
+
+Please note that wargame usernames are no longer level<X>, but wargamename<X>
+e.g. vortex4, semtex2, ...
+
+Note: at this moment, blacksun is not available.
+
+bandit1@bandit.labs.overthewire.org's password: boJ9jbbUNNfktd78OOpsqOltutMc3MY1
+               
+      ,----..            ,----,          .---. 
+     /   /   \         ,/   .`|         /. ./|
+    /   .     :      ,`   .'  :     .--'.  ' ;
+   .   /   ;.  \   ;    ;     /    /__./ \ : |
+  .   ;   /  ` ; .'___,/    ,' .--'.  '   \' .
+  ;   |  ; \ ; | |    :     | /___/ \ |    ' ' 
+  |   :  | ; | ' ;    |.';  ; ;   \  \;      : 
+  .   |  ' ' ' : `----'  |  |  \   ;  `      |
+  '   ;  \; /  |     '   :  ;   .   \    .\  ; 
+   \   \  ',  /      |   |  '    \   \   ' \ |
+    ;   :    /       '   :  |     :   '  |--"  
+     \   \ .'        ;   |.'       \   \ ;     
+  www. `---` ver     '---' he       '---" ire.org
+
+              
+Welcome to the OverTheWire games machine!
+
+If you find any problems, please report them to Steven on
+irc.overthewire.org.
+
+--[ Playing the games ]--
+
+  This machine holds several wargames. 
+  If you are playing "somegame", then:
+
+    * USERNAMES are somegame0, somegame1, ...
+    * Most LEVELS are stored in /somegame/.
+    * PASSWORDS for each level are stored in /etc/somegame_pass/.
+
+  Write-access to homedirectories is disabled. It is advised to create a
+  working directory with a hard-to-guess name in /tmp/.  You can use the
+  command "mktemp -d" in order to generate a random and hard to guess
+  directory in /tmp/.  Read-access to both /tmp/ and /proc/ is disabled
+  so that users can not snoop on eachother.
+
+  Please play nice:
+      
+    * don't leave orphan processes running
+    * don't leave exploit-files laying around
+    * don't annoy other players
+    * don't post passwords or spoilers
+    * again, DONT POST SPOILERS! 
+      This includes writeups of your solution on your blog or website!
+
+--[ Tips ]--
+
+  This machine has a 64bit processor and many security-features enabled
+  by default, although ASLR has been switched off.  The following
+  compiler flags might be interesting:
+
+    -m32                    compile for 32bit
+    -fno-stack-protector    disable ProPolice
+    -Wl,-z,norelro          disable relro 
+
+  In addition, the execstack tool can be used to flag the stack as
+  executable on ELF binaries.
+
+  Finally, network-access is limited for most levels by a local
+  firewall.
+
+--[ Tools ]--
+
+ For your convenience we have installed a few usefull tools which you can find
+ in the following locations:
+
+    * peda (https://github.com/longld/peda.git) in /usr/local/peda/
+    * gdbinit (https://github.com/gdbinit/Gdbinit) in /usr/local/gdbinit/
+    * pwntools (https://github.com/Gallopsled/pwntools) in /usr/src/pwntools/
+    * radare2 (http://www.radare.org/) should be in $PATH
+
+--[ More information ]--
+
+  For more information regarding individual wargames, visit
+  http://www.overthewire.org/wargames/
+
+  For questions or comments, contact us through IRC on
+  irc.overthewire.org.
+
+
+bandit1@melinda:~$ 
